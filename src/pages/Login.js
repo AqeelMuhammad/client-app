@@ -11,7 +11,7 @@ function Login() {
 
   const login = () => {
     axios
-      .post(`http://localhost:3001/auth/login`, {
+      .post(`https://blog-app-server-4f5eb8f1732e.herokuapp.com/auth/login`, {
         username: username,
         password: password,
       })

@@ -20,7 +20,7 @@ function App() {
   });
   useEffect(() => {
     axios
-      .get("http://localhost:3001/auth/auth", {
+      .get("https://blog-app-server-4f5eb8f1732e.herokuapp.com/auth/auth", {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then((response) => {

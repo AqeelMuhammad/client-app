@@ -15,9 +15,11 @@ function Registration() {
   });
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:3001/auth", data).then(() => {
-      //   history.push("/");
-    });
+    axios
+      .post("https://blog-app-server-4f5eb8f1732e.herokuapp.com/auth", data)
+      .then(() => {
+        //   history.push("/");
+      });
   };
   return (
     <div>
